@@ -1,0 +1,3 @@
+/Users/manjumuralidharan/CLionProjects/VisLL/cmake-build-debug/CMakeFiles/VisLL.dir
+/Users/manjumuralidharan/CLionProjects/VisLL/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/manjumuralidharan/CLionProjects/VisLL/cmake-build-debug/CMakeFiles/rebuild_cache.dir
