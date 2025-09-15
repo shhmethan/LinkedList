@@ -81,7 +81,7 @@ void drawGUI() {
         index++;
     });
 
-    // Reserve ImGui space so next widgets don’t overlap
+    // Make sure no overlap occurs
     ImGui::Dummy(ImVec2(index * spacing + 50, node_radius * 2 + 20));
 
     ImGui::End();
@@ -90,7 +90,7 @@ void drawGUI() {
 int main() {
     if (!glfwInit()) return 1;
 
-    // macOS OpenGL 3.2 Core Profile
+
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 2);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
@@ -98,7 +98,7 @@ int main() {
 
     GLFWwindow* window = glfwCreateWindow(800, 800, "Linked List GUI", nullptr, nullptr);
     glfwMakeContextCurrent(window);
-    glfwSwapInterval(1); // Enable vsync
+    glfwSwapInterval(1);
 
     IMGUI_CHECKVERSION();
     ImGui::CreateContext();
