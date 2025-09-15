@@ -7,16 +7,24 @@
 // Node class template
 template<typename T>
 class Node {
+private:
+    T data;
+    Node<T>* next;
 
+    // Grant LinkedList access to private members
+    template<typename> friend class LinkedList;
+
+public:
+    Node(T val) : data(val), next(nullptr) {}
 };
 
 template<typename T>
 class LinkedList {
 private:
-
+    Node<T>* head;
 
 public:
-
+    LinkedList() : head(nullptr) {}
 
     void append(T value) {
 
@@ -32,7 +40,6 @@ public:
 
     void deleteLast() {
 
-
     }
 
     void forEach(std::function<void(const T&, bool)> callback) {
@@ -46,6 +53,7 @@ public:
 
     ~LinkedList() {
 
+    }
 };
 
 #endif // LINKEDLIST_H

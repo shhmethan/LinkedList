@@ -17,21 +17,21 @@ void drawGUI() {
     // Append button — generates "X1", "X2", etc.
     if (ImGui::Button("Append Node")) {
         std::string label = "X" + std::to_string(counter++);
-        ll.append(label);
+       // ll.append(label);
     }
     // Prepend button
     if (ImGui::Button("Prepend Node")) {
         std::string label = "X" + std::to_string(counter++);
-        ll.addFirst(label);
+     //   ll.addFirst(label);
     }
 
     ImGui::SameLine();
     if (ImGui::Button("Delete Last")) {
-        ll.deleteLast();
+      //  ll.deleteLast();
     }
     ImGui::SameLine();
     if (ImGui::Button("Delete First")) {
-        ll.deleteFirst();
+      //  ll.deleteFirst();
     }
 
     ImGui::SameLine();
