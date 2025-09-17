@@ -41,7 +41,10 @@ public:
     void deleteLast() {
 
     }
+    void deleteAtIndex(int index) {
 
+        // Else index was out of bounds, do nothing
+    }
     void forEach(std::function<void(const T&, bool)> callback) {
         Node<T>* current = head;
         while (current) {
