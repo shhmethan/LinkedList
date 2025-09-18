@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/Ethan/CLionProjects/VisLL/cmake-build-debug/cmake_install.cmake",
+		"C:/Users/Ethan/CLionProjects/VisLL/cmake-build-debug/extern/glfw/cmake_install.cmake",
+		"C:/Users/Ethan/CLionProjects/VisLL/cmake-build-debug/extern/glfw/src/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

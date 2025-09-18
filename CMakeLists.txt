@@ -5,7 +5,12 @@ set(CMAKE_CXX_STANDARD 17)
 
 # Find packages
 find_package(OpenGL REQUIRED)
-find_package(glfw3 3.3 REQUIRED)
+# find_package(glfw3 3.3 REQUIRED)
+set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
+set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
+set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
+add_subdirectory(extern/glfw)
+
 
 # Add executable with all sources manually listed
 add_executable(VisLL
